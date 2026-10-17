@@ -1,0 +1,305 @@
+{
+  "policy_version": "v2.0",
+  "sets": {
+    "dev": {
+      "Baseline": {
+        "n_cases": 40,
+        "correct_action_rate": 0.55,
+        "precision": 0.571,
+        "recall": 0.5,
+        "false_positives": 6,
+        "false_negatives": 8,
+        "missed_compromises": 3,
+        "limit_on_planned_or_normal": 0,
+        "human_review_rate": 0.35,
+        "investigate_rate": 0.0,
+        "total_decision_cost_usd": 19860,
+        "avg_decision_cost_usd": 496.5,
+        "brier_score": null,
+        "confusion": {
+          "Normal": {
+            "Ignore": 13,
+            "Report": 1,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 5,
+            "Report": 5,
+            "Limit": 0
+          },
+          "Waste": {
+            "Ignore": 5,
+            "Report": 4,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 3,
+            "Report": 4,
+            "Limit": 0
+          }
+        }
+      },
+      "v1_C": {
+        "n_cases": 40,
+        "correct_action_rate": 0.675,
+        "precision": 0.619,
+        "recall": 0.812,
+        "false_positives": 8,
+        "false_negatives": 3,
+        "missed_compromises": 1,
+        "limit_on_planned_or_normal": 0,
+        "human_review_rate": 0.425,
+        "investigate_rate": 0.525,
+        "total_decision_cost_usd": 8605,
+        "avg_decision_cost_usd": 215.12,
+        "brier_score": 0.653,
+        "confusion": {
+          "Normal": {
+            "Ignore": 10,
+            "Report": 4,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 6,
+            "Report": 4,
+            "Limit": 0
+          },
+          "Waste": {
+            "Ignore": 2,
+            "Report": 7,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 1,
+            "Report": 2,
+            "Limit": 4
+          }
+        }
+      },
+      "v2_no_learning": {
+        "n_cases": 40,
+        "correct_action_rate": 0.55,
+        "precision": 0.533,
+        "recall": 1.0,
+        "false_positives": 14,
+        "false_negatives": 0,
+        "missed_compromises": 0,
+        "limit_on_planned_or_normal": 0,
+        "human_review_rate": 0.625,
+        "investigate_rate": 0.2,
+        "total_decision_cost_usd": 3480,
+        "avg_decision_cost_usd": 87.0,
+        "brier_score": 0.602,
+        "confusion": {
+          "Normal": {
+            "Ignore": 8,
+            "Report": 6,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 2,
+            "Report": 8,
+            "Limit": 0
+          },
+          "Waste": {
+            "Ignore": 0,
+            "Report": 8,
+            "Limit": 1
+          },
+          "Compromise": {
+            "Ignore": 0,
+            "Report": 3,
+            "Limit": 4
+          }
+        }
+      },
+      "v2_full": {
+        "n_cases": 40,
+        "correct_action_rate": 0.525,
+        "precision": 0.517,
+        "recall": 0.938,
+        "false_positives": 14,
+        "false_negatives": 1,
+        "missed_compromises": 0,
+        "limit_on_planned_or_normal": 0,
+        "human_review_rate": 0.6,
+        "investigate_rate": 0.225,
+        "total_decision_cost_usd": 3865,
+        "avg_decision_cost_usd": 96.62,
+        "brier_score": 0.645,
+        "confusion": {
+          "Normal": {
+            "Ignore": 8,
+            "Report": 6,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 2,
+            "Report": 8,
+            "Limit": 0
+          },
+          "Waste": {
+            "Ignore": 1,
+            "Report": 7,
+            "Limit": 1
+          },
+          "Compromise": {
+            "Ignore": 0,
+            "Report": 3,
+            "Limit": 4
+          }
+        }
+      }
+    },
+    "holdout": {
+      "Baseline": {
+        "n_cases": 40,
+        "correct_action_rate": 0.4,
+        "precision": 0.357,
+        "recall": 0.312,
+        "false_positives": 9,
+        "false_negatives": 11,
+        "missed_compromises": 3,
+        "limit_on_planned_or_normal": 0,
+        "human_review_rate": 0.35,
+        "investigate_rate": 0.0,
+        "total_decision_cost_usd": 21090,
+        "avg_decision_cost_usd": 527.25,
+        "brier_score": null,
+        "confusion": {
+          "Normal": {
+            "Ignore": 12,
+            "Report": 2,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 3,
+            "Report": 7,
+            "Limit": 0
+          },
+          "Waste": {
+            "Ignore": 8,
+            "Report": 1,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 3,
+            "Report": 4,
+            "Limit": 0
+          }
+        }
+      },
+      "v1_C": {
+        "n_cases": 40,
+        "correct_action_rate": 0.55,
+        "precision": 0.5,
+        "recall": 0.688,
+        "false_positives": 11,
+        "false_negatives": 5,
+        "missed_compromises": 0,
+        "limit_on_planned_or_normal": 1,
+        "human_review_rate": 0.4,
+        "investigate_rate": 0.4,
+        "total_decision_cost_usd": 6260,
+        "avg_decision_cost_usd": 156.5,
+        "brier_score": 0.73,
+        "confusion": {
+          "Normal": {
+            "Ignore": 11,
+            "Report": 3,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 2,
+            "Report": 7,
+            "Limit": 1
+          },
+          "Waste": {
+            "Ignore": 5,
+            "Report": 4,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 0,
+            "Report": 2,
+            "Limit": 5
+          }
+        }
+      },
+      "v2_no_learning": {
+        "n_cases": 40,
+        "correct_action_rate": 0.5,
+        "precision": 0.469,
+        "recall": 0.938,
+        "false_positives": 17,
+        "false_negatives": 1,
+        "missed_compromises": 0,
+        "limit_on_planned_or_normal": 1,
+        "human_review_rate": 0.65,
+        "investigate_rate": 0.075,
+        "total_decision_cost_usd": 4795,
+        "avg_decision_cost_usd": 119.88,
+        "brier_score": 0.591,
+        "confusion": {
+          "Normal": {
+            "Ignore": 6,
+            "Report": 8,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 1,
+            "Report": 8,
+            "Limit": 1
+          },
+          "Waste": {
+            "Ignore": 1,
+            "Report": 8,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 0,
+            "Report": 2,
+            "Limit": 5
+          }
+        }
+      },
+      "v2_full": {
+        "n_cases": 40,
+        "correct_action_rate": 0.6,
+        "precision": 0.5,
+        "recall": 0.875,
+        "false_positives": 14,
+        "false_negatives": 2,
+        "missed_compromises": 0,
+        "limit_on_planned_or_normal": 1,
+        "human_review_rate": 0.5,
+        "investigate_rate": 0.15,
+        "total_decision_cost_usd": 4080,
+        "avg_decision_cost_usd": 102.0,
+        "brier_score": 0.576,
+        "confusion": {
+          "Normal": {
+            "Ignore": 9,
+            "Report": 5,
+            "Limit": 0
+          },
+          "Planned": {
+            "Ignore": 1,
+            "Report": 8,
+            "Limit": 1
+          },
+          "Waste": {
+            "Ignore": 2,
+            "Report": 7,
+            "Limit": 0
+          },
+          "Compromise": {
+            "Ignore": 0,
+            "Report": 0,
+            "Limit": 7
+          }
+        }
+      }
+    }
+  }
+}
